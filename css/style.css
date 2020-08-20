@@ -1,0 +1,989 @@
+/*Common--------------------------------*/
+
+* {box-sizing: border-box;}
+
+a {text-decoration: none; color: inherit;}
+
+li {list-style: none;}
+
+.w-100 {width: 100%;}
+
+.w-50 {width: 50%;}
+
+.w-25 {width: 25%;}
+
+.h-100 {height: 100%;}
+
+.d-flex {display: flex;}
+
+.flex-column {flex-direction: column;}
+
+.jc-sb {justify-content: space-between;}
+
+.jc-sa {justify-content: space-around;}
+
+.align-center {align-items: center;}
+
+.font-lobster {font-family: 'Lobster', cursive;}
+
+.font-didact {font-family: 'Didact Gothic', sans-serif;}
+
+.container {width: 80%; margin: 0 auto;}
+
+.text__center {text-align: center;}
+
+.text__right {text-align: right;}
+
+
+/*Specified-------------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fafafa;
+	font-family: 'Poiret One', cursive;
+}
+
+.first__screen__body {overflow: hidden;}
+
+/*Header------------------------------------*/
+
+header {
+	height: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	color: #333;
+	border-bottom: 1px solid #ddd;
+	background: linear-gradient(60deg, #aaa, #eee);
+}
+
+.logo__title {
+	cursor: pointer;
+	transition: 2s;
+}
+
+.logo__title:hover {
+	color: #000;
+}
+
+.header__phone {
+	font-family: 'Didact Gothic', sans-serif;
+	transition: 2s;
+}
+
+.header__phone:hover {
+	color: #000;
+}
+
+.address {
+	transition: 2s;
+}
+
+.address:hover {
+	color: #000;
+}
+
+.menu__icon {
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	transition: 2s;
+	opacity: 0.7;
+}
+
+.menu__icon:hover {
+	opacity: 1;
+}
+
+/*==== Menu ==================================*/
+
+.menu__burger {
+	display: none;
+	width: 50%;
+	height: auto;
+	background: linear-gradient(60deg, #aaa, #eee);
+	z-index: 1;
+	position: absolute;
+	/*position: fixed;*/
+	right: 0;
+	top: 0;
+	/*top: 58px;*/
+	text-align: left;
+	padding-left: 50px;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.mobile__menu__item {
+	list-style: none;
+	background: linear-gradient(60deg, #aaa, #eee);
+	font-size: 18px;
+	font-family: 'Didact Gothic', sans-serif;
+	color: #333;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 28px;
+	/*border: 1px solid #999;*/
+	transition: 1s;
+}
+
+.mobile__menu__item:hover {
+	color: #000;
+	transform: scale(1.03);
+}
+
+.menu__img {
+	margin-top: 20px;
+}
+
+.close__item {
+	list-style: none;
+	margin-bottom: 20px;
+	width: 45px;
+	height: 45px;
+	border-radius: 100px;
+	border: 1px solid #ccc;
+	background-color: #fafafa;
+	padding: 12px;
+	top: 40px;
+}
+
+.close__icon {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+/*Main----------------------------------------*/
+
+.main__container {
+	width: 100%;
+	height: 92vh;
+}
+
+.first__screen {
+	overflow: hidden;
+}
+
+/*Left Panel---------------------------------*/
+
+.left__panel {
+	width: 25%;
+	height: 100%;
+	color: #444;
+}
+
+.social__bar {
+	width: 100%;
+	height: 15%;
+	padding: 24px;
+}
+
+.social__icon {
+	width: 24px;
+	height: 24px;
+	opacity: 0.6;
+	transition: 1s;
+}
+
+.social__icon:hover {
+	opacity: 1;
+}
+
+.text__block {
+	width: 100%;
+	height: 65%;
+	padding: 28px;
+}
+
+.text__block h3 {
+	font-size: 2rem;
+	transition: 3s;
+	color: #222;
+}
+
+.dress__icon {
+	width: 36px;
+	height: 36px;
+	transition: 5s;
+	cursor: pointer;
+}
+
+.dress__icon:hover {
+	transform: scale(3.5);
+	opacity: 0.1;
+}
+
+.nav__arrows {
+	width: 100%;
+	height: 20%;
+}
+
+.arrow__left, .arrow__right {
+	width: 50%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+} 
+
+.arrow__left__img, .arrow__right__img {
+	width: 28px;
+	height: 28px;
+	opacity: 0.6;
+	transition: 1s;
+}
+
+.arrow__left__img:hover,
+.arrow__right__img:hover {
+	transform: scale(1.2);
+}
+
+
+/*Right Panel-------------------------------*/
+
+.right__panel {
+	width: 75%;
+	height: 100%;
+}
+
+.upper__row, .lower__row {
+	width: 100%;
+	height: 50%;
+}
+
+/*Upper row of Right Panel-------------------*/
+
+.main__heading__block {
+	width: 66.66666%;
+	height: 100%;
+	padding: 40px;
+}
+
+h2 {
+	margin: 0;
+	color: #111;
+}
+
+.main__heading {
+	font-size: 140px;
+	text-shadow: 20px 20px 0px #ccc;
+	color: #111;
+	margin: 0;
+	padding: 0;
+	transition: 5s;
+}
+
+.main__heading:hover {
+	text-shadow: 80px 40px 0px #eee;
+}
+
+.social__bar__mobile {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+/*Order Block of Right Panel---------------*/
+
+.order__block {
+	width: 33.44444%;
+	height: 100%;
+	padding: 20px;
+}
+
+.more__btn, .order__btn {
+	width: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #555;
+	background-color: transparent;
+	border-style: none;
+	outline: none;
+	border: 2px solid #555;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.more__btn:hover, .order__btn:hover {
+	background-color: #888;
+	color: #fff;
+}
+
+/*========= Lower row of Right Panel ============*/
+
+.row__block {
+	width: 33.3333%;
+	height: 100%;
+	display: inline-block;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 3s;
+	color: #eee;
+	padding-left: 20px;
+}
+
+.row__block:hover {
+	background-position: bottom;
+}
+
+.bg-img-01 {
+	background-image: url(img/01.jpg);
+}
+
+.bg-img-02 {
+	background-image: url(img/02.jpg);
+}
+
+.bg-img-03 {
+	background-image: url(img/03.jpg);
+}
+
+.page__link {display: block;}
+
+
+.text__block__mobile {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.footer {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+/*==== Page Footer =================*/
+
+.page__footer {
+	width: 100%;
+	height: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	background: linear-gradient(60deg, #666, #111);
+	color: #eee;
+	display: flex;
+	justify-content: space-between;
+}
+
+.page__footer__container {
+	width: 100%;
+	align-items: center;
+
+}
+
+.footer__logo:hover {
+	color: #fff;
+}
+
+.footer__phone {
+	transition: 1s;
+}
+
+.footer__phone:hover {
+	color: #fff;
+}
+
+.footer__address:hover {
+	color: #fff;
+}
+
+
+/*==== Dresses Page ===================*/
+
+.body__page {
+	min-height: 100vh;
+	height: auto;
+}
+
+.page__logo__title {
+	color: #ccc;
+	transition: 2s;
+}
+
+.page__logo__title:hover {
+	color: #fff;
+}
+
+.dresses__row {
+	height: 81vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.dress__block {
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	padding: 20px;
+	color: #eee;
+	transition: 2s;
+}
+
+.dress__block:hover {
+	background-position: bottom;
+}
+
+.block__header {
+	color: #eee;
+	letter-spacing: 2px;
+}
+
+.card__text {
+	background-color: #00000060;
+	padding: 10px;
+}
+
+.card__order__btn {
+	border-style: none;
+	background-color: transparent;
+	color: #eee;
+	border: 2px solid #ccc;
+	outline: none;
+	transition: .3s;
+	padding: 15px 20px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+.card__order__btn:hover {
+	background: #eee;
+	color: #333;
+}
+
+.dress-bg-01 {
+	background-image: url(../img/dresses/blue-01.jpg);
+}
+
+.dress-bg-02 {
+	background-image: url(../img/dresses/black-01.jpg);
+}
+
+.dress-bg-03 {
+	background-image: url(../img/dresses/red-01.jpg);
+}
+
+.dress-bg-04 {
+	background-image: url(../img/dresses/golden-01.jpg);
+}
+
+
+/*==== Shirts Page =================================*/
+
+.shirts-bg-01 {
+	background-image: url(../img/shirts/01.jpg);
+}
+
+.shirts-bg-02 {
+	background-image: url(../img/shirts/02.jpg);
+}
+
+.shirts-bg-03 {
+	background-image: url(../img/shirts/03.jpg);
+}
+
+.shirts-bg-04 {
+	background-image: url(../img/shirts/04.jpg);
+}
+
+.shirts-bg-05 {
+	background-image: url(../img/shirts/05.jpg);
+}
+
+.shirts-bg-06 {
+	background-image: url(../img/shirts/06.jpg);
+}
+
+
+/*==== Skirts Page =================================*/
+
+.skirts-bg-01 {
+	background-image: url(../img/skirts/01.jpg);
+}
+
+.skirts-bg-02 {
+	background-image: url(../img/skirts/02.jpg);
+}
+
+.skirts-bg-03 {
+	background-image: url(../img/skirts/03.jpg);
+}
+
+.skirts-bg-04 {
+	background-image: url(../img/skirts/04.jpg);
+}
+
+.skirts-bg-05 {
+	background-image: url(../img/skirts/05.jpg);
+}
+
+.skirts-bg-06 {
+	background-image: url(../img/skirts/06.jpg);
+}
+
+.skirts-bg-07 {
+	background-image: url(../img/skirts/07.jpg);
+}
+
+.skirts-bg-08 {
+	background-image: url(../img/skirts/08.jpg);
+}
+
+
+/*==== Services Page ====================================*/
+
+.services__container {
+	padding-bottom: 40px;
+}
+
+.services__row {
+	width: 100%;
+	height: 300px;
+	margin-bottom: 10px;
+}
+
+.service__card__heading {
+	padding: 20px;
+	background-color: #00000090;
+}
+
+.service__card__heading h2 {color: #eee;}
+
+.service__card {
+	height: 100%;
+	width: 32.8%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	opacity: 0.9;
+	padding: 20px;
+	transition: 0.6s;
+	margin-bottom: 10px;
+}
+
+.service__card:hover {
+	opacity: 1;
+}
+
+.tailoring {background-image: url(../img/services/tailoring.jpg);}
+
+.design {background-image: url(../img/services/design.jpeg);}
+
+.repair {background-image: url(../img/services/repair.jpg);}
+
+.wedding {background-image: url(../img/services/wedding-dress.jpg);}
+
+.for-men {background-image: url(../img/services/men-suite.jpg);}
+
+.for-kids {background-image: url(../img/services/for-kids.jpeg);}
+
+
+/*==== About Page ==================================*/
+
+.about__img, .about__text {
+	padding: 20px;
+}
+
+
+.about__img img {
+	width: 400px;
+	height: auto;
+}
+
+
+/*==== Contacts Page ===============================*/
+
+.contact__wrap {
+	padding: 28px;
+}
+
+.tailor__img {
+	width: 60px;
+	height: 60px;
+	opacity: 0.7;
+}
+
+.contact__text {padding-right: 20px;}
+
+.map {
+	border: 1px solid #888;
+	border-radius: 8px;
+}
+
+
+/*==== Order Page ===============================*/
+
+.contact__text {margin-top: 40px;}
+
+.tailor__img {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+form {
+	border: 1px solid #aaa;
+	border-radius: 8px;
+	width: 100%;
+	padding: 20px;
+}
+
+.input, .input__message {
+	width: 100%;
+	border-style: none;
+	background-color: transparent;
+	border-bottom: 1px solid #aaa;
+	font-size: 20px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	outline: none;
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+.input {
+	height: 40px;
+}
+
+.submit__btn {
+	border-style: none;
+	background-color: transparent;
+	color: #555;
+	text-transform: uppercase;
+	border: 2px solid #555;
+	outline: none;
+	transition: 0.6s;
+	padding: 15px 40px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.submit__btn:hover {
+	background: #555;
+	color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====== Media Queries ===================*/
+
+@media (max-width: 991px) {
+
+	body {overflow: visible;}
+
+	.first__screen__body {overflow: visible;}
+	
+	header {
+		padding-left: 20px;
+		padding-right: 20px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.main__container {
+		height: 88vh;
+	}
+
+	.menu__burger {
+		padding-left: 0;
+		padding-right: 40px;
+		border-left: 1px solid #ddd;
+	}
+
+	.left__panel {
+		display: none;
+	}
+
+	.right__panel {
+		width: 100%;
+	}
+
+	.upper__row {
+		height: auto;
+		flex-direction: column;
+	}
+
+	.main__heading__block {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.social__bar__mobile {
+		visibility: visible;
+		width: auto;
+		height: 100%;
+		opacity: 1;
+	}
+
+	.order__block {
+		width: 100%;
+		height: auto;
+		padding: 20px;
+		flex-direction: row;
+	}
+
+	.text__block__mobile {
+		visibility: visible;
+		width: 100%;
+		height: auto;
+		opacity: 1;
+		transition: 3s;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.h3__block {
+		width: 30%;
+		transition: 3s;
+		padding-left: 40px;
+		padding-top: 20px;
+	}
+
+	.text__block {
+		width: 70%;
+		transition: 3s;
+	}
+
+	.footer {
+		visibility: visible;
+		width: 100%;
+		height: auto;
+		opacity: 1;
+		background-color: #111;
+		color: #eee;
+	}
+
+	.footer__container {
+		padding-left: 20px;
+		padding-right: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo__title:hover {
+		color: #fff;
+	}
+
+	.footer__phone {
+		font-family: 'Didact Gothic', sans-serif;
+		transition: 2s;
+	}
+
+	.footer__phone:hover {
+		transform: scale(1.5);
+		color: #fff;
+	}
+
+	.address:hover {
+		color: #fff;
+	}
+	
+	/*==== Dresses Page 991px ==================*/
+
+	.body__page {
+		height: auto;
+		width: 100vw;
+	}
+
+	.dresses__row {
+		height: auto;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.dresses__half__row {
+		width: 100%;
+	}
+
+	.dress__block {
+		height: 450px;
+	}
+
+	/*==== Contact Page ====================*/
+
+	.container {
+		width: 90%;
+		flex-direction: column;
+	}
+
+	.contact__text {
+		width: 100%;
+	}
+
+	.contact__map {
+		width: 100%;
+		overflow: hidden;
+	}
+
+/*==== About Page 991 ====================*/
+
+.about__img, .about__text {
+	padding: 10px;
+}
+
+.dark-bc {
+	background-color: #00000090;
+	color: #eee;
+}
+
+
+
+}
+
+
+
+
+
+@media (max-width: 767px) {
+
+	body {height: 100%;}
+
+	.main__container {
+		height: 100%;
+		width: 100%;
+	}
+
+	.address {
+		display: none;
+	}
+
+	.footer__address {
+		display: none;
+	}
+
+	.menu__burger {
+		width: 100%;
+		text-align: center;
+		padding-left: 0;
+		padding-right: 40px;
+	}
+
+	.upper__row {
+		width: 100%;
+		height: auto;
+	}
+
+	.main__heading__block {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.main__heading {
+		font-size: 80px;
+		text-shadow: 20px 20px 0px #ddd;
+		margin-bottom: 30px;
+	}
+
+	.social__bar__mobile {
+		width: 100%;
+		height: auto;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.order__block {
+		padding: 10px;
+	}
+
+	.lower__row {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.row__block {
+		width: 100%;
+		height: 400px;
+	}
+
+	.text__block__mobile {
+		flex-direction: column;
+	}
+
+	.h3__block {
+		width: 100%;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.text__block {
+		width: 100%;
+		padding-top: 0;
+		margin-top: 0;
+	}
+	
+	/*==== Dresses Page 991px ==================*/
+
+	.dresses__half__row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.dress__block {
+		width: 100%;
+		height: 500px;
+	}
+
+	/*==== Shirts Page 767 ========================*/
+
+	.card__content {display: flex;}
+
+	/*==== Services Page =======================*/
+
+	.services__row {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.service__card {
+		width: 100%;
+		height: 240px;
+		opacity: 1;
+	}
+
+	/*==== About Page 767 ====================*/
+
+	.about__block {
+		flex-direction: column;
+	}
+
+	.about__img, .about__text {
+		width: 100%;
+	}
+
+	.about__img img, .about__last__img {
+		width: 100%;
+		height: auto;
+	}
+
+	/*==== Contacts Page 767 ===================*/
+
+	.contact__wrap {
+		padding: 0;
+		padding-bottom: 20px;
+	}
+
+
+}
+
+

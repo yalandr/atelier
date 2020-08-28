@@ -1,37 +1,21 @@
 /*Common--------------------------------*/
 
 * {box-sizing: border-box;}
-
 a {text-decoration: none; color: inherit;}
-
 li {list-style: none;}
-
 .w-100 {width: 100%;}
-
 .w-50 {width: 50%;}
-
 .w-25 {width: 25%;}
-
 .h-100 {height: 100%;}
-
 .d-flex {display: flex;}
-
 .flex-column {flex-direction: column;}
-
 .jc-sb {justify-content: space-between;}
-
 .jc-sa {justify-content: space-around;}
-
 .align-center {align-items: center;}
-
 .font-lobster {font-family: 'Lobster', cursive;}
-
 .font-didact {font-family: 'Didact Gothic', sans-serif;}
-
 .container {width: 80%; margin: 0 auto;}
-
 .text__center {text-align: center;}
-
 .text__right {text-align: right;}
 
 
@@ -52,47 +36,22 @@ header {
 	height: auto;
 	padding-left: 40px;
 	padding-right: 40px;
-	color: #333;
-	border-bottom: 1px solid #ddd;
-	background: linear-gradient(60deg, #aaa, #eee);
+	color: #111;
+	border-bottom: 1px solid #111;
 }
 
-.logo__title {
-	cursor: pointer;
-	transition: 2s;
-}
-
-.logo__title:hover {
-	color: #000;
-}
+.logo__title {cursor: pointer;}
 
 .header__phone {
 	font-family: 'Didact Gothic', sans-serif;
-	transition: 2s;
-}
-
-.header__phone:hover {
-	color: #000;
-}
-
-.address {
-	transition: 2s;
-}
-
-.address:hover {
-	color: #000;
+	letter-spacing: 1px;
+	cursor: pointer;
 }
 
 .menu__icon {
 	width: 28px;
 	height: 28px;
 	cursor: pointer;
-	transition: 2s;
-	opacity: 0.7;
-}
-
-.menu__icon:hover {
-	opacity: 1;
 }
 
 /*==== Menu ==================================*/
@@ -100,41 +59,33 @@ header {
 .menu__burger {
 	display: none;
 	width: 50%;
+	min-height: 100vh;
 	height: auto;
-	background: linear-gradient(60deg, #aaa, #eee);
+	background: #fafafa;
 	z-index: 1;
 	position: absolute;
-	/*position: fixed;*/
 	right: 0;
 	top: 0;
-	/*top: 58px;*/
 	text-align: left;
 	padding-left: 50px;
-	border-left: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #111;
+	border-bottom: 1px solid #111;
+	transition: .3s;
 }
 
 .mobile__menu__item {
 	list-style: none;
-	background: linear-gradient(60deg, #aaa, #eee);
-	font-size: 18px;
-	font-family: 'Didact Gothic', sans-serif;
-	color: #333;
-	font-weight: 400;
+	font-size: 22px;
+	font-family: sans-serif;
+	color: #111;
+	font-weight: 800;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 	padding: 28px;
-	/*border: 1px solid #999;*/
-	transition: 1s;
+	transition: .3s;
 }
 
-.mobile__menu__item:hover {
-	color: #000;
-	transform: scale(1.03);
-}
-
-.menu__img {
-	margin-top: 20px;
-}
+.mobile__menu__item:hover {margin-left: 12px;}
 
 .close__item {
 	list-style: none;
@@ -142,8 +93,7 @@ header {
 	width: 45px;
 	height: 45px;
 	border-radius: 100px;
-	border: 1px solid #ccc;
-	background-color: #fafafa;
+	border: 1px solid #111;
 	padding: 12px;
 	top: 40px;
 }
@@ -154,6 +104,8 @@ header {
 	cursor: pointer;
 }
 
+.menu__img {display: none;}
+
 /*Main----------------------------------------*/
 
 .main__container {
@@ -161,16 +113,13 @@ header {
 	height: 92vh;
 }
 
-.first__screen {
-	overflow: hidden;
-}
+.first__screen {overflow: hidden;}
 
 /*Left Panel---------------------------------*/
 
 .left__panel {
 	width: 25%;
 	height: 100%;
-	color: #444;
 }
 
 .social__bar {
@@ -183,7 +132,7 @@ header {
 	width: 24px;
 	height: 24px;
 	opacity: 0.6;
-	transition: 1s;
+	transition: .3s;
 }
 
 .social__icon:hover {
@@ -193,30 +142,24 @@ header {
 .text__block {
 	width: 100%;
 	height: 65%;
-	padding: 28px;
+	padding: 0 28px;
 }
 
 .text__block h3 {
 	font-size: 2rem;
-	transition: 3s;
 	color: #222;
+	margin-top: 0;
 }
 
-.dress__icon {
-	width: 36px;
-	height: 36px;
-	transition: 5s;
-	cursor: pointer;
-}
-
-.dress__icon:hover {
-	transform: scale(3.5);
-	opacity: 0.1;
+.text__block p {
+	color: #555;
+	letter-spacing: 1px;
+	line-height: 22px;
 }
 
 .nav__arrows {
 	width: 100%;
-	height: 20%;
+	height: 16%;
 }
 
 .arrow__left, .arrow__right {
@@ -229,8 +172,7 @@ header {
 .arrow__left__img, .arrow__right__img {
 	width: 28px;
 	height: 28px;
-	opacity: 0.6;
-	transition: 1s;
+	transition: .3s;
 }
 
 .arrow__left__img:hover,
@@ -262,6 +204,7 @@ header {
 h2 {
 	margin: 0;
 	color: #111;
+	letter-spacing: 1px;
 }
 
 .main__heading {
@@ -270,7 +213,7 @@ h2 {
 	color: #111;
 	margin: 0;
 	padding: 0;
-	transition: 5s;
+	transition: 2s;
 }
 
 .main__heading:hover {
@@ -296,17 +239,18 @@ h2 {
 	width: 200px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	color: #555;
+	color: #111;
+	letter-spacing: 1px;
 	background-color: transparent;
 	border-style: none;
 	outline: none;
-	border: 2px solid #555;
+	border: 2px solid #111;
 	cursor: pointer;
-	transition: 1s;
+	transition: .3s;
 }
 
 .more__btn:hover, .order__btn:hover {
-	background-color: #888;
+	background-color: #111;
 	color: #fff;
 }
 
@@ -330,28 +274,23 @@ h2 {
 }
 
 .bg-img-01 {
-	background-image: url(img/01.jpg);
+	background-image: url(../img/01.jpg);
 }
 
 .bg-img-02 {
-	background-image: url(img/02.jpg);
+	background-image: url(../img/02.jpg);
 }
 
 .bg-img-03 {
-	background-image: url(img/03.jpg);
+	background-image: url(../img/03.jpg);
 }
 
 .page__link {display: block;}
 
+.page__link h3 {letter-spacing: 1px;}
 
-.text__block__mobile {
-	visibility: hidden;
-	width: 0;
-	height: 0;
-	opacity: 0;
-}
 
-.footer {
+.text__block__mobile, .footer {
 	visibility: hidden;
 	width: 0;
 	height: 0;
@@ -365,8 +304,8 @@ h2 {
 	height: auto;
 	padding-left: 40px;
 	padding-right: 40px;
-	background: linear-gradient(60deg, #666, #111);
-	color: #eee;
+	background: #111;
+	color: #fff;
 	display: flex;
 	justify-content: space-between;
 }
@@ -377,41 +316,18 @@ h2 {
 
 }
 
-.footer__logo:hover {
-	color: #fff;
-}
-
-.footer__phone {
-	transition: 1s;
-}
-
-.footer__phone:hover {
-	color: #fff;
-}
-
-.footer__address:hover {
-	color: #fff;
-}
+.footer__phone {letter-spacing: 1px;}
 
 
 /*==== Dresses Page ===================*/
 
 .body__page {
 	min-height: 100vh;
-	height: auto;
-}
-
-.page__logo__title {
-	color: #ccc;
-	transition: 2s;
-}
-
-.page__logo__title:hover {
-	color: #fff;
+	max-height: auto;
 }
 
 .dresses__row {
-	height: 81vh;
+	height: 82vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -436,27 +352,32 @@ h2 {
 	letter-spacing: 2px;
 }
 
+.card__content {
+	flex-direction: column;
+}
+
 .card__text {
 	background-color: #00000060;
-	padding: 10px;
+	padding: 0 10px;
 }
 
 .card__order__btn {
-	border-style: none;
+	float: right;
 	background-color: transparent;
 	color: #eee;
+	letter-spacing: 2px;
 	border: 2px solid #ccc;
 	outline: none;
 	transition: .3s;
 	padding: 15px 20px;
 	cursor: pointer;
 	font-weight: bold;
-	margin-top: 50px;
+	margin-top: 0;
 }
 
 .card__order__btn:hover {
 	background: #eee;
-	color: #333;
+	color: #111;
 }
 
 .dress-bg-01 {
@@ -592,6 +513,10 @@ h2 {
 	padding: 20px;
 }
 
+.about__text p {
+	line-height: 22px;
+	letter-spacing: 1px;
+}
 
 .about__img img {
 	width: 400px;
@@ -611,7 +536,10 @@ h2 {
 	opacity: 0.7;
 }
 
-.contact__text {padding-right: 20px;}
+.contact__text {
+	padding-right: 20px;
+	letter-spacing: 1px;
+}
 
 .map {
 	border: 1px solid #888;
@@ -620,6 +548,11 @@ h2 {
 
 
 /*==== Order Page ===============================*/
+
+.contact__wrap {
+	letter-spacing: 1px;
+	line-height: 22px;
+}
 
 .contact__text {margin-top: 40px;}
 
@@ -646,6 +579,7 @@ form {
 	padding-right: 20px;
 	outline: none;
 	font-family: 'Didact Gothic', sans-serif;
+	letter-spacing: 1px;
 }
 
 .input {
@@ -655,19 +589,20 @@ form {
 .submit__btn {
 	border-style: none;
 	background-color: transparent;
-	color: #555;
+	color: #111;
+	letter-spacing: 1px;
 	text-transform: uppercase;
-	border: 2px solid #555;
+	border: 2px solid #111;
 	outline: none;
-	transition: 0.6s;
+	transition: 0.3s;
 	padding: 15px 40px;
 	cursor: pointer;
 	font-weight: bold;
 }
 
 .submit__btn:hover {
-	background: #555;
-	color: #eee;
+	background: #111;
+	color: #fff;
 }
 
 
@@ -704,6 +639,12 @@ form {
 		padding-left: 0;
 		padding-right: 40px;
 		border-left: 1px solid #ddd;
+	}
+
+	.menu__img {
+		display: block;
+		margin-top: 40px;
+		margin-left: 30px;
 	}
 
 	.left__panel {

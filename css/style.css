@@ -137,6 +137,7 @@ header {
 
 .social__icon:hover {
 	opacity: 1;
+	transform: rotate(360deg);
 }
 
 .text__block {
@@ -605,6 +606,34 @@ form {
 	color: #fff;
 }
 
+.order-popup {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .8); 
+	display: none;
+	align-items: center;
+	justify-content: center;
+	transition: .3s;
+}
+
+.order-popup-content {
+	width: 600px;
+	height: auto;
+	background: #fafafa;
+	padding: 40px; 
+	border: 1px solid #aaa;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.order-popup-content p {
+	letter-spacing: 1px;
+	line-height: 24px;
+}
+
 
 
 
@@ -619,7 +648,7 @@ form {
 
 /*====== Media Queries ===================*/
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
 	body {overflow: visible;}
 
@@ -923,6 +952,8 @@ form {
 		padding: 0;
 		padding-bottom: 20px;
 	}
+
+	.order-popup-content {width: 90%;}
 
 
 }

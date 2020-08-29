@@ -24,9 +24,15 @@ $(function(){
  	});
  });
 
+
 //------ Thanks for order---------------------------------
 
-document.querySelector('.submit__btn').onclick = function(event) {
+document.querySelector('#send-btn').onclick = function(event) {
 	event = event || window.event;
-	alert('Спасибо за обращение! Мы Вам скоро перезвоним.');
+	document.querySelector('.order-popup').style.display = 'flex';
+};
+
+document.querySelector('#ok-btn').onclick = function(event) {
+	event = event || window.event;
+	document.querySelector('.order-popup').style.display = 'none';
 };

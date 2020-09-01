@@ -1,17 +1,17 @@
 /*Common--------------------------------*/
 
-* {box-sizing: border-box;}
+* {-webkit-box-sizing: border-box;box-sizing: border-box;}
 a {text-decoration: none; color: inherit;}
 li {list-style: none;}
 .w-100 {width: 100%;}
 .w-50 {width: 50%;}
 .w-25 {width: 25%;}
 .h-100 {height: 100%;}
-.d-flex {display: flex;}
-.flex-column {flex-direction: column;}
-.jc-sb {justify-content: space-between;}
-.jc-sa {justify-content: space-around;}
-.align-center {align-items: center;}
+.d-flex {display: -webkit-box; display: -ms-flexbox; display: flex;}
+.flex-column {-webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
+.jc-sb {-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+.jc-sa {-ms-flex-pack: distribute;justify-content: space-around;}
+.align-center {-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
 .font-lobster {font-family: 'Lobster', cursive;}
 .font-didact {font-family: 'Didact Gothic', sans-serif;}
 .container {width: 80%; margin: 0 auto;}
@@ -70,6 +70,8 @@ header {
 	padding-left: 50px;
 	border-left: 1px solid #111;
 	border-bottom: 1px solid #111;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 }
 
@@ -82,6 +84,8 @@ header {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	padding: 28px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 }
 
@@ -132,12 +136,16 @@ header {
 	width: 24px;
 	height: 24px;
 	opacity: 0.6;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 }
 
 .social__icon:hover {
 	opacity: 1;
-	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
 }
 
 .text__block {
@@ -166,19 +174,27 @@ header {
 .arrow__left, .arrow__right {
 	width: 50%;
 	height: 100%;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 } 
 
 .arrow__left__img, .arrow__right__img {
 	width: 28px;
 	height: 28px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 }
 
 .arrow__left__img:hover,
 .arrow__right__img:hover {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 }
 
 
@@ -214,6 +230,8 @@ h2 {
 	color: #111;
 	margin: 0;
 	padding: 0;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
 	transition: 2s;
 }
 
@@ -247,6 +265,8 @@ h2 {
 	outline: none;
 	border: 2px solid #111;
 	cursor: pointer;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 }
 
@@ -265,6 +285,8 @@ h2 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	-webkit-transition: 3s;
+	-o-transition: 3s;
 	transition: 3s;
 	color: #eee;
 	padding-left: 20px;
@@ -307,13 +329,19 @@ h2 {
 	padding-right: 40px;
 	background: #111;
 	color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .page__footer__container {
 	width: 100%;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 
 }
 
@@ -329,9 +357,16 @@ h2 {
 
 .dresses__row {
 	height: 82vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .dress__block {
@@ -341,6 +376,8 @@ h2 {
 	background-position: top;
 	padding: 20px;
 	color: #eee;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
 	transition: 2s;
 }
 
@@ -354,7 +391,10 @@ h2 {
 }
 
 .card__content {
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .card__text {
@@ -369,6 +409,8 @@ h2 {
 	letter-spacing: 2px;
 	border: 2px solid #ccc;
 	outline: none;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 	padding: 15px 20px;
 	cursor: pointer;
@@ -487,6 +529,8 @@ h2 {
 	background-position: top;
 	opacity: 0.9;
 	padding: 20px;
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
 	transition: 0.6s;
 	margin-bottom: 10px;
 }
@@ -595,6 +639,8 @@ form {
 	text-transform: uppercase;
 	border: 2px solid #111;
 	outline: none;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 	padding: 15px 40px;
 	cursor: pointer;
@@ -614,8 +660,14 @@ form {
 	left: 0;
 	background: rgba(0, 0, 0, .8); 
 	display: none;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 }
 
@@ -686,14 +738,24 @@ form {
 
 	.upper__row {
 		height: auto;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.main__heading__block {
 		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 
 	.social__bar__mobile {
@@ -707,7 +769,10 @@ form {
 		width: 100%;
 		height: auto;
 		padding: 20px;
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 
 	.text__block__mobile {
@@ -715,13 +780,21 @@ form {
 		width: 100%;
 		height: auto;
 		opacity: 1;
+		-webkit-transition: 3s;
+		-o-transition: 3s;
 		transition: 3s;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 
 	.h3__block {
 		width: 30%;
+		-webkit-transition: 3s;
+		-o-transition: 3s;
 		transition: 3s;
 		padding-left: 40px;
 		padding-top: 20px;
@@ -729,6 +802,8 @@ form {
 
 	.text__block {
 		width: 70%;
+		-webkit-transition: 3s;
+		-o-transition: 3s;
 		transition: 3s;
 	}
 
@@ -744,9 +819,15 @@ form {
 	.footer__container {
 		padding-left: 20px;
 		padding-right: 20px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 
 	.logo__title:hover {
@@ -755,11 +836,15 @@ form {
 
 	.footer__phone {
 		font-family: 'Didact Gothic', sans-serif;
+		-webkit-transition: 2s;
+		-o-transition: 2s;
 		transition: 2s;
 	}
 
 	.footer__phone:hover {
-		transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+		    -ms-transform: scale(1.5);
+		        transform: scale(1.5);
 		color: #fff;
 	}
 
@@ -776,7 +861,10 @@ form {
 
 	.dresses__row {
 		height: auto;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		width: 100%;
 	}
 
@@ -792,7 +880,10 @@ form {
 
 	.container {
 		width: 90%;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.contact__text {
@@ -854,7 +945,10 @@ form {
 
 	.main__heading__block {
 		width: 100%;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.main__heading {
@@ -866,8 +960,12 @@ form {
 	.social__bar__mobile {
 		width: 100%;
 		height: auto;
-		flex-direction: row;
-		justify-content: space-around;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 	}
 
 	.order__block {
@@ -877,8 +975,13 @@ form {
 	.lower__row {
 		width: 100%;
 		height: auto;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.row__block {
@@ -887,7 +990,10 @@ form {
 	}
 
 	.text__block__mobile {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.h3__block {
@@ -905,8 +1011,13 @@ form {
 	/*==== Dresses Page 991px ==================*/
 
 	.dresses__half__row {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.dress__block {
@@ -916,12 +1027,15 @@ form {
 
 	/*==== Shirts Page 767 ========================*/
 
-	.card__content {display: flex;}
+	.card__content {display: -webkit-box;display: -ms-flexbox;display: flex;}
 
 	/*==== Services Page =======================*/
 
 	.services__row {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		height: auto;
 	}
 
@@ -934,7 +1048,10 @@ form {
 	/*==== About Page 767 ====================*/
 
 	.about__block {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.about__img, .about__text {
